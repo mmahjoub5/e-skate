@@ -1280,8 +1280,9 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <net name="N$1" class="0">
 <segment>
 <pinref part="POT" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="U$1" pin="P0.00/XL1@02"/>
-<wire x1="12.7" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="55.88" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="U$1" pin="P0.03/AIN1@05"/>
+<wire x1="12.7" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
