@@ -834,6 +834,63 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="4.7UF" prefix="C">
+<description>&lt;h3&gt;4.7µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="-0603-6.3V-(10%)" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08280"/>
+<attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-16V-(+80/-20%)" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10300" constant="no"/>
+<attribute name="VALUE" value="4.7uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-35V-(20%)" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14106"/>
+<attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402_TIGHT-6.3V-20%-X5R" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14240"/>
+<attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
@@ -868,23 +925,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="1206" urn="urn:adsk.eagle:footprint:37399/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
 <package name="0402" urn="urn:adsk.eagle:footprint:37389/1" library_version="1">
 <description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
@@ -911,13 +951,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packageinstance name="0603"/>
 </packageinstances>
 </package3d>
-<package3d name="1206" urn="urn:adsk.eagle:package:37426/1" type="box" library_version="1">
-<description>Generic 3216 (1206) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="1206"/>
-</packageinstances>
-</package3d>
 <package3d name="0402" urn="urn:adsk.eagle:package:37413/1" type="box" library_version="1">
 <description>Generic 1005 (0402) package
 0.2mm courtyard excess rounded to nearest 0.05mm.</description>
@@ -939,45 +972,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="4.7UF" urn="urn:adsk.eagle:component:37469/1" prefix="C" library_version="1">
-<description>&lt;h3&gt;4.7µF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="0603" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08280"/>
-<attribute name="VALUE" value="4.7uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-1206-16V-(+80/-20%)" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37426/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-10300" constant="no"/>
-<attribute name="VALUE" value="4.7uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="100PF" urn="urn:adsk.eagle:component:37440/1" prefix="C" library_version="1">
 <description>&lt;h3&gt;100pF/0.1nF ceramic capacitors&lt;/h3&gt;
 &lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
@@ -1187,259 +1181,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </deviceset>
 </devicesets>
 </library>
-<library name="Wurth_Automotive_WE-HCFA" urn="urn:adsk.eagle:library:14076708">
-<description>&lt;BR&gt;Wurth Elektronik - Automotive - Single Coil Power Inductors - WE-HCFA&lt;br&gt;&lt;Hr&gt;
-
-&lt;BR&gt;
-&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
-&lt;TR&gt;   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------------------------&lt;BR&gt;
-&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
-  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
-&lt;BR&gt;
-      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  
-&lt;/TABLE&gt;
-&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
-
-&lt;HR&gt;&lt;BR&gt;
-&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
-EMC &amp; Inductive Solutions&lt;br&gt;
-
-Max-Eyth-Str.1&lt;br&gt;
-D-74638 Waldenburg&lt;br&gt;
-&lt;br&gt;
-Tel: +49 (0)7942-945-0&lt;br&gt;
-Fax:+49 (0)7942-945-5000&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
-&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
-&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
-Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
-that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
-Please contact us for more information.&lt;br&gt;
-&lt;HR&gt;
-&lt;br&gt;Eagle Version 9, Library Revision 2020a, 2020-03-18&lt;br&gt;
-&lt;HR&gt;
-Copyright: Würth Elektronik</description>
-<packages>
-<package name="WE-HCFA_2818" urn="urn:adsk.eagle:footprint:13133216/2" library_version="2">
-<description>&lt;b&gt;WE-HCFA High Current Flat Wire Inductor
-&lt;br&gt;&lt;/b&gt;Size : 2818
-&lt;br&gt;L X W X H = 27.5mm X 27.5mm X 17mm</description>
-<smd name="1" x="-5.325" y="-14.15" dx="6" dy="5.95" layer="1"/>
-<smd name="2" x="5.325" y="-14.15" dx="6" dy="5.95" layer="1"/>
-<smd name="3" x="0" y="8.5" dx="8.1" dy="4.95" layer="1"/>
-<wire x1="-8" y1="-9.5" x2="-13.75" y2="-9.5" width="0.1" layer="51"/>
-<wire x1="-13.75" y1="-9.5" x2="-13.75" y2="9.5" width="0.1" layer="51"/>
-<wire x1="-13.75" y1="9.5" x2="-8" y2="9.5" width="0.1" layer="51"/>
-<wire x1="-8" y1="9.5" x2="-8" y2="7.5" width="0.1" layer="51"/>
-<wire x1="-8" y1="7.5" x2="-4" y2="5.5" width="0.1" layer="51"/>
-<wire x1="-4" y1="5.5" x2="4" y2="5.5" width="0.1" layer="51"/>
-<wire x1="4" y1="5.5" x2="8" y2="7.5" width="0.1" layer="51"/>
-<wire x1="8" y1="7.5" x2="8" y2="9.5" width="0.1" layer="51"/>
-<wire x1="8" y1="9.5" x2="13.75" y2="9.5" width="0.1" layer="51"/>
-<wire x1="13.75" y1="9.5" x2="13.75" y2="-9.5" width="0.1" layer="51"/>
-<wire x1="13.75" y1="-9.5" x2="8" y2="-9.5" width="0.1" layer="51"/>
-<wire x1="8" y1="-9.5" x2="8" y2="-7.5" width="0.1" layer="51"/>
-<wire x1="8" y1="-7.5" x2="4" y2="-5.5" width="0.1" layer="51"/>
-<wire x1="4" y1="-5.5" x2="-4" y2="-5.5" width="0.1" layer="51"/>
-<wire x1="-4" y1="-5.5" x2="-8" y2="-7.5" width="0.1" layer="51"/>
-<wire x1="-8" y1="-7.5" x2="-8" y2="-9.5" width="0.1" layer="51"/>
-<wire x1="0" y1="10.75" x2="-0.01" y2="10.75" width="0.1" layer="51" style="shortdash" curve="-359.946702"/>
-<wire x1="-3.9" y1="5.6" x2="-7.9" y2="7.6" width="0.2" layer="21"/>
-<wire x1="-7.9" y1="7.6" x2="-7.9" y2="9.6" width="0.2" layer="21"/>
-<wire x1="-7.9" y1="9.6" x2="-13.85" y2="9.6" width="0.2" layer="21"/>
-<wire x1="-13.85" y1="9.6" x2="-13.85" y2="-9.6" width="0.2" layer="21"/>
-<wire x1="-13.85" y1="-9.6" x2="-7.9" y2="-9.6" width="0.2" layer="21"/>
-<wire x1="-7.9" y1="-9.6" x2="-7.9" y2="-7.6" width="0.2" layer="21"/>
-<wire x1="-7.9" y1="-7.6" x2="-4" y2="-5.6" width="0.2" layer="21"/>
-<wire x1="-4" y1="-5.6" x2="3.9" y2="-5.6" width="0.2" layer="21"/>
-<wire x1="3.9" y1="-5.6" x2="7.9" y2="-7.6" width="0.2" layer="21"/>
-<wire x1="7.9" y1="-7.6" x2="7.9" y2="-9.6" width="0.2" layer="21"/>
-<wire x1="7.9" y1="-9.6" x2="13.85" y2="-9.6" width="0.2" layer="21"/>
-<wire x1="13.85" y1="-9.6" x2="13.85" y2="9.6" width="0.2" layer="21"/>
-<wire x1="13.85" y1="9.6" x2="7.9" y2="9.6" width="0.2" layer="21"/>
-<wire x1="7.9" y1="9.6" x2="7.9" y2="7.6" width="0.2" layer="21"/>
-<wire x1="7.9" y1="7.6" x2="4" y2="5.6" width="0.2" layer="21"/>
-<wire x1="4" y1="5.6" x2="-3.9" y2="5.6" width="0.2" layer="21"/>
-<text x="0" y="13.5" size="2.54" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="-7.4" y="-21.7" size="2.54" layer="27">&gt;VALUE</text>
-<polygon width="0.127" layer="39">
-<vertex x="-14.05" y="11.265"/>
-<vertex x="14.05" y="11.265"/>
-<vertex x="14.05" y="-17.325"/>
-<vertex x="-14.05" y="-17.325"/>
-</polygon>
-</package>
-</packages>
-<packages3d>
-<package3d name="WE-HCFA_2818" urn="urn:adsk.eagle:package:13133218/3" type="model" library_version="2">
-<description>&lt;b&gt;WE-HCFA High Current Flat Wire Inductor
-&lt;br&gt;&lt;/b&gt;Size : 2818
-&lt;br&gt;L X W X H = 27.5mm X 27.5mm X 17mm</description>
-<packageinstances>
-<packageinstance name="WE-HCFA_2818"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="WE-HCFA" urn="urn:adsk.eagle:symbol:14076709/1" library_version="2">
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-5.08" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="0" y="3.81" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-3.81" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="WE-HCFA_2818" urn="urn:adsk.eagle:component:14076710/2" prefix="L" library_version="2">
-<description>&lt;b&gt;WE-HCFA High Current Flat Wire Inductor
-&lt;br&gt;
-&lt;br&gt;Characteristics
-&lt;br&gt;
-&lt;br&gt;&lt;/b&gt;Flat wire design
-&lt;br&gt;Magnetically shielded
-&lt;br&gt;High rated current up to 50 A
-&lt;br&gt;High saturation performance
-&lt;br&gt;Excellent planarity
-&lt;br&gt;Optimized for DC/DC converters
-&lt;br&gt;Wide range operating temperature from -40 to +150°C -&gt; AECQ 200 Grade 1
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt; Applications
-&lt;br&gt;
-&lt;br&gt;&lt;/b&gt;Storage inductor for high efficiency automotive DC/DC converters
-&lt;br&gt;Single and polyphase buck and boost converters
-&lt;br&gt;Filter for infotainment and audio applications
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;a href="https://katalog.we-online.com/media/images/v2/o153360v209%20Family_WE-HCFA-78436432033.jpg" title="Enlarge picture"&gt;
-&lt;img src="https://katalog.we-online.com/media/images/v2/o153360v209%20Family_WE-HCFA-78436432033.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="https://katalog.we-online.com/en/am/WE-HCFA"&gt;https://katalog.we-online.com/en/am/WE-HCFA&lt;/a&gt;&lt;p&gt;
-
-Updated By Ella Wu  2020-03-18&lt;br&gt;
-2020 (C) Wurth Elektronik</description>
-<gates>
-<gate name="G$1" symbol="WE-HCFA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WE-HCFA_2818">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13133218/3"/>
-</package3dinstances>
-<technologies>
-<technology name="_78436432010">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/78436432010.pdf" constant="no"/>
-<attribute name="FRES" value="45Mhz" constant="no"/>
-<attribute name="IR" value="47A" constant="no"/>
-<attribute name="ISAT" value="81A" constant="no"/>
-<attribute name="MOUNT" value="SMT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 78436432010 " constant="no"/>
-<attribute name="RDC" value="0.6mOhm" constant="no"/>
-<attribute name="VALUE" value="1uH" constant="no"/>
-</technology>
-<technology name="_78436432015">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/78436432015.pdf" constant="no"/>
-<attribute name="FRES" value="34Mhz" constant="no"/>
-<attribute name="IR" value="47A" constant="no"/>
-<attribute name="ISAT" value="53A" constant="no"/>
-<attribute name="MOUNT" value="SMT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 78436432015 " constant="no"/>
-<attribute name="RDC" value="0.6mOhm" constant="no"/>
-<attribute name="VALUE" value="1.5uH" constant="no"/>
-</technology>
-<technology name="_78436432033">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/78436432033.pdf" constant="no"/>
-<attribute name="FRES" value="34Mhz" constant="no"/>
-<attribute name="IR" value="38A" constant="no"/>
-<attribute name="ISAT" value="50A" constant="no"/>
-<attribute name="MOUNT" value="SMT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 78436432033 " constant="no"/>
-<attribute name="RDC" value="1.1mOhm" constant="no"/>
-<attribute name="VALUE" value="3.3uH" constant="no"/>
-</technology>
-<technology name="_78436432047">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/78436432047.pdf" constant="no"/>
-<attribute name="FRES" value="28Mhz" constant="no"/>
-<attribute name="IR" value="38A" constant="no"/>
-<attribute name="ISAT" value="33A" constant="no"/>
-<attribute name="MOUNT" value="SMT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 78436432047 " constant="no"/>
-<attribute name="RDC" value="1.1mOhm" constant="no"/>
-<attribute name="VALUE" value="4.7uH" constant="no"/>
-</technology>
-<technology name="_78436432068">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/78436432068.pdf" constant="no"/>
-<attribute name="FRES" value="20Mhz" constant="no"/>
-<attribute name="IR" value="38A" constant="no"/>
-<attribute name="ISAT" value="24A" constant="no"/>
-<attribute name="MOUNT" value="SMT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 78436432068 " constant="no"/>
-<attribute name="RDC" value="1.1mOhm" constant="no"/>
-<attribute name="VALUE" value="6.8uH" constant="no"/>
-</technology>
-<technology name="_78436432100">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/78436432100.pdf" constant="no"/>
-<attribute name="FRES" value="18Mhz" constant="no"/>
-<attribute name="IR" value="38A" constant="no"/>
-<attribute name="ISAT" value="14A" constant="no"/>
-<attribute name="MOUNT" value="SMT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 78436432100 " constant="no"/>
-<attribute name="RDC" value="1.1mOhm" constant="no"/>
-<attribute name="VALUE" value="10uH" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Wurth_Automotive_WE-MAIA" urn="urn:adsk.eagle:library:14076715">
 <description>&lt;BR&gt;Wurth Elektronik - Automotive - Single Coil Power Inductors - WE-MAIA&lt;br&gt;&lt;Hr&gt;
 
@@ -1551,6 +1292,44 @@ Copyright: Würth Elektronik</description>
 <vertex x="-1.9" y="-1.9"/>
 </polygon>
 </package>
+<package name="WE-MAIA_2510" urn="urn:adsk.eagle:footprint:13154116/1" library_version="1">
+<description>&lt;b&gt;WE-MAIA SMD Power Inductor
+&lt;/b&gt;&lt;br&gt;Size : 2510
+&lt;br&gt;L X W X H = 2.5mm X 2mm X 1mm</description>
+<smd name="1" x="-0.975" y="0" dx="0.85" dy="2.3" layer="1"/>
+<smd name="2" x="0.975" y="0" dx="0.85" dy="2.3" layer="1"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.1" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="1" x2="-1.25" y2="1" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="1" x2="0.5" y2="1" width="0.1" layer="51"/>
+<wire x1="1.25" y1="1" x2="0.5" y2="1" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-1" x2="-1.25" y2="-1" width="0.1" layer="51"/>
+<wire x1="1.25" y1="-1" x2="0.5" y2="-1" width="0.1" layer="51"/>
+<wire x1="-0.5" y1="-1" x2="0.5" y2="-1" width="0.1" layer="51"/>
+<wire x1="-0.2" y1="1.1" x2="0.2" y2="1.1" width="0.2" layer="21"/>
+<wire x1="0.2" y1="-1.1" x2="-0.2" y2="-1.1" width="0.2" layer="21"/>
+<text x="-0.07" y="1.64" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-1.57" y="-2.11" size="0.6096" layer="27">&gt;VALUE</text>
+<polygon width="0.1" layer="43">
+<vertex x="-0.34" y="0.87"/>
+<vertex x="0.37" y="0.87"/>
+<vertex x="0.37" y="-0.85"/>
+<vertex x="-0.34" y="-0.85"/>
+</polygon>
+<polygon width="0.1" layer="41">
+<vertex x="-0.34" y="0.88"/>
+<vertex x="0.38" y="0.88"/>
+<vertex x="0.37" y="-0.85"/>
+<vertex x="-0.35" y="-0.85"/>
+<vertex x="-0.35" y="0.86"/>
+</polygon>
+<polygon width="0.1" layer="39">
+<vertex x="-1.6" y="1.35"/>
+<vertex x="1.6" y="1.35"/>
+<vertex x="1.6" y="-1.35"/>
+<vertex x="-1.6" y="-1.35"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="WE-MAIA_3015" urn="urn:adsk.eagle:package:13154123/2" type="model" library_version="1">
@@ -1559,6 +1338,14 @@ Copyright: Würth Elektronik</description>
 &lt;br&gt;L X W X H = 3mm X 3mm X 1.5mm</description>
 <packageinstances>
 <packageinstance name="WE-MAIA_3015"/>
+</packageinstances>
+</package3d>
+<package3d name="WE-MAIA_2510" urn="urn:adsk.eagle:package:13154127/2" type="model" library_version="1">
+<description>&lt;b&gt;WE-MAIA SMD Power Inductor
+&lt;/b&gt;&lt;br&gt;Size : 2510
+&lt;br&gt;L X W X H = 2.5mm X 2mm X 1mm</description>
+<packageinstances>
+<packageinstance name="WE-MAIA_2510"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1749,6 +1536,185 @@ Details see: &lt;a href="https://katalog.we-online.de/en/am/WE-MAIA"&gt;https://
 <attribute name="PART-NUMBER" value=" 78438335470 " constant="no"/>
 <attribute name="RDC" value="2300mOhm" constant="no"/>
 <attribute name="VALUE" value="47uH" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-MAIA_2510" urn="urn:adsk.eagle:component:14076717/1" prefix="L" library_version="1">
+<description>&lt;b&gt; WE-MAIA SMD Power Inductor
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt;Characteristics&lt;/B&gt;
+&lt;br&gt;
+&lt;/b&gt;&lt;br&gt;Magnetic iron alloy allows high rated currents
+&lt;br&gt;Compact design
+&lt;br&gt;Magnetically shielded
+&lt;br&gt;Hight current capability and handles hight transient current spikes
+&lt;br&gt;No acoustic noise and no leakage flux noise
+&lt;br&gt;Operating temperature range: -40°C up to +125°C
+
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt;Applications
+&lt;br&gt;
+&lt;/b&gt;&lt;br&gt;Power supplies for mobile devices
+&lt;br&gt;DC/DC-converter for high current power supplies
+&lt;br&gt;DC/DC-converter for Field Programmable Gate Array (FPGA)
+&lt;br&gt;POL-converters
+&lt;br&gt;Microcontroller
+&lt;br&gt;Portable as well as battery-driven devices
+&lt;br&gt;Wireless communication devices
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;a href="https://katalog.we-online.de/media/images/v2/o56285v209%20Family_WE-MAIA.jpg" title="Enlarge picture"&gt;
+&lt;img src="https://katalog.we-online.de/media/images/v2/o56285v209%20Family_WE-MAIA.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="https://katalog.we-online.de/en/am/WE-MAIA"&gt;https://katalog.we-online.de/en/am/WE-MAIA
+&lt;/a&gt;&lt;p&gt;
+&lt;br&gt;Updated By Ella Wu  2019-09-10
+&lt;br&gt;2019 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WE-MAIA_2510">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13154127/2"/>
+</package3dinstances>
+<technologies>
+<technology name="_784383230033">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/784383230033.pdf" constant="no"/>
+<attribute name="FRES" value="180MHz" constant="no"/>
+<attribute name="IR" value="3.4A" constant="no"/>
+<attribute name="ISAT" value="6.2A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 784383230033 " constant="no"/>
+<attribute name="RDC" value="38mOhm" constant="no"/>
+<attribute name="VALUE" value="0.33uH" constant="no"/>
+</technology>
+<technology name="_784383230047">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/784383230047.pdf" constant="no"/>
+<attribute name="FRES" value="170MHz" constant="no"/>
+<attribute name="IR" value="3.2A" constant="no"/>
+<attribute name="ISAT" value="5.5A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 784383230047 " constant="no"/>
+<attribute name="RDC" value="48mOhm" constant="no"/>
+<attribute name="VALUE" value="0.47uH" constant="no"/>
+</technology>
+<technology name="_784383230068">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/784383230068.pdf" constant="no"/>
+<attribute name="FRES" value="135MHz" constant="no"/>
+<attribute name="IR" value="3.1A" constant="no"/>
+<attribute name="ISAT" value="4.7A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 784383230068 " constant="no"/>
+<attribute name="RDC" value="60mOhm" constant="no"/>
+<attribute name="VALUE" value="0.68uH" constant="no"/>
+</technology>
+<technology name="_784383230082">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/784383230082.pdf" constant="no"/>
+<attribute name="FRES" value="105MHz" constant="no"/>
+<attribute name="IR" value="2.6A" constant="no"/>
+<attribute name="ISAT" value="4.25A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 784383230082 " constant="no"/>
+<attribute name="RDC" value="69mOhm" constant="no"/>
+<attribute name="VALUE" value="0.82uH" constant="no"/>
+</technology>
+<technology name="_78438323010">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323010.pdf" constant="no"/>
+<attribute name="FRES" value="80MHz" constant="no"/>
+<attribute name="IR" value="2.5A" constant="no"/>
+<attribute name="ISAT" value="4A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323010 " constant="no"/>
+<attribute name="RDC" value="75mOhm" constant="no"/>
+<attribute name="VALUE" value="1uH" constant="no"/>
+</technology>
+<technology name="_78438323012">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323012.pdf" constant="no"/>
+<attribute name="FRES" value="75MHz" constant="no"/>
+<attribute name="IR" value="1.9A" constant="no"/>
+<attribute name="ISAT" value="3.8A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323012 " constant="no"/>
+<attribute name="RDC" value="106mOhm" constant="no"/>
+<attribute name="VALUE" value="1.2uH" constant="no"/>
+</technology>
+<technology name="_78438323015">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323015.pdf" constant="no"/>
+<attribute name="FRES" value="65MHz" constant="no"/>
+<attribute name="IR" value="1.8A" constant="no"/>
+<attribute name="ISAT" value="3.5A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323015 " constant="no"/>
+<attribute name="RDC" value="110mOhm" constant="no"/>
+<attribute name="VALUE" value="1.5uH" constant="no"/>
+</technology>
+<technology name="_78438323022">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323022.pdf" constant="no"/>
+<attribute name="FRES" value="60MHz" constant="no"/>
+<attribute name="IR" value="1.3A" constant="no"/>
+<attribute name="ISAT" value="2.5A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323022 " constant="no"/>
+<attribute name="RDC" value="176mOhm" constant="no"/>
+<attribute name="VALUE" value="2.2uH" constant="no"/>
+</technology>
+<technology name="_78438323033">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323033.pdf" constant="no"/>
+<attribute name="FRES" value="50MHz" constant="no"/>
+<attribute name="IR" value="1.25A" constant="no"/>
+<attribute name="ISAT" value="2.1A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323033 " constant="no"/>
+<attribute name="RDC" value="264mOhm" constant="no"/>
+<attribute name="VALUE" value="3.3uH" constant="no"/>
+</technology>
+<technology name="_78438323047">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323047.pdf" constant="no"/>
+<attribute name="FRES" value="35MHz" constant="no"/>
+<attribute name="IR" value="0.94A" constant="no"/>
+<attribute name="ISAT" value="1.75A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323047 " constant="no"/>
+<attribute name="RDC" value="388mOhm" constant="no"/>
+<attribute name="VALUE" value="4.7uH" constant="no"/>
+</technology>
+<technology name="_78438323068">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323068.pdf" constant="no"/>
+<attribute name="FRES" value="30MHz" constant="no"/>
+<attribute name="IR" value="0.85A" constant="no"/>
+<attribute name="ISAT" value="1.55A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323068 " constant="no"/>
+<attribute name="RDC" value="648mOhm" constant="no"/>
+<attribute name="VALUE" value="6.8uH" constant="no"/>
+</technology>
+<technology name="_78438323082">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323082.pdf" constant="no"/>
+<attribute name="FRES" value="27MHz" constant="no"/>
+<attribute name="IR" value="0.7A" constant="no"/>
+<attribute name="ISAT" value="1.45A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323082 " constant="no"/>
+<attribute name="RDC" value="743mOhm" constant="no"/>
+<attribute name="VALUE" value="8.2uH" constant="no"/>
+</technology>
+<technology name="_78438323100">
+<attribute name="DATASHEET-URL" value="https://katalog.we-online.de/am/datasheet/78438323100.pdf" constant="no"/>
+<attribute name="FRES" value="25MHz" constant="no"/>
+<attribute name="IR" value="0.6A" constant="no"/>
+<attribute name="ISAT" value="1.35A" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 78438323100 " constant="no"/>
+<attribute name="RDC" value="843mOhm" constant="no"/>
+<attribute name="VALUE" value="10uH" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2489,32 +2455,36 @@ This library has been generated by our experienced pcb layout engineers using cu
 &lt;BR&gt;
 Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@PCBLayout.com&lt;/a&gt; if you have any questions/concerns regarding any of our content or services.</description>
 <packages>
-<package name="ABS07-32.768KHZ-T" urn="urn:adsk.eagle:footprint:10899583/1" library_version="1">
-<smd name="1" x="-1.25" y="0" dx="1.9" dy="1.1" layer="1" rot="R90"/>
-<smd name="2" x="1.25" y="0" dx="1.9" dy="1.1" layer="1" rot="R90"/>
-<wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.127" layer="51"/>
-<wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-0.58" y1="0.75" x2="0.58" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-0.56" y1="-0.75" x2="0.6" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="-2.05" y1="1.2" x2="2.05" y2="1.2" width="0.05" layer="39"/>
-<wire x1="2.05" y1="1.2" x2="2.05" y2="-1.2" width="0.05" layer="39"/>
-<wire x1="2.05" y1="-1.2" x2="-2.05" y2="-1.2" width="0.05" layer="39"/>
-<wire x1="-2.05" y1="-1.2" x2="-2.05" y2="1.2" width="0.05" layer="39"/>
-<text x="-2.75" y="1.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.5" y="-2.75" size="1.27" layer="27">&gt;VALUE</text>
+<package name="ECS-.327-7-38-TR" urn="urn:adsk.eagle:footprint:12863857/2" library_version="1">
+<wire x1="-3.3" y1="0.75" x2="3.3" y2="0.75" width="0.127" layer="51"/>
+<wire x1="3.3" y1="0.75" x2="3.3" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="3.3" y1="-0.75" x2="-3.3" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-3.3" y1="-0.75" x2="-3.3" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-4" y1="1" x2="4" y2="1" width="0.05" layer="39"/>
+<wire x1="4" y1="1" x2="4" y2="-1" width="0.05" layer="39"/>
+<wire x1="4" y1="-1" x2="-4" y2="-1" width="0.05" layer="39"/>
+<wire x1="-4" y1="-1" x2="-4" y2="1" width="0.05" layer="39"/>
+<wire x1="-2.3" y1="0.75" x2="2.3" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-0.75" x2="2.3" y2="-0.75" width="0.127" layer="21"/>
+<text x="-4.00406875" y="1.25126875" size="0.61021875" layer="25">&gt;NAME</text>
+<text x="-4.000140625" y="-1.750059375" size="0.609621875" layer="27">&gt;VALUE</text>
+<circle x="-4.3" y="-0.4" radius="0.1" width="0.2" layer="51"/>
+<circle x="-4.3" y="-0.4" radius="0.1" width="0.2" layer="21"/>
+<smd name="1" x="-3.15" y="-0.45" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="3.15" y="-0.45" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="3.15" y="0.45" dx="0.6" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-3.15" y="0.45" dx="0.6" dy="1.2" layer="1" rot="R90"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="ABS07-32.768KHZ-T" urn="urn:adsk.eagle:package:10899606/2" type="model" library_version="1">
+<package3d name="ECS-.327-7-38-TR" urn="urn:adsk.eagle:package:12863883/4" type="model" library_version="1">
 <packageinstances>
-<packageinstance name="ABS07-32.768KHZ-T"/>
+<packageinstance name="ECS-.327-7-38-TR"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="Q" urn="urn:adsk.eagle:symbol:24014181/1" library_version="1">
+<symbol name="CRYSTAL-2SMD" urn="urn:adsk.eagle:symbol:24014180/1" library_version="1">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -2523,38 +2493,36 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
 <wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="-3.302" y="2.286" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.556" y="-4.572" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<text x="-5.0885" y="2.54425" size="1.78098125" layer="95">&gt;NAME</text>
+<text x="-5.0931" y="-4.07446875" size="1.78258125" layer="96">&gt;VALUE</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ABS07-32.768KHZ-T" urn="urn:adsk.eagle:component:24014200/1" prefix="X" library_version="1">
-<description>&lt;h3&gt;CRYSTAL 32.7680KHZ 12.5PF SMD &lt;/h3&gt;
+<deviceset name="ECS-.327-7-38-TR" urn="urn:adsk.eagle:component:24014194/1" prefix="Y" library_version="1">
+<description>&lt;h3&gt; CRYSTAL 32.7680KHZ 7PF SMD &lt;/h3&gt;
 &lt;BR&gt;
-&lt;a href="https://abracon.com/Resonators/ABS07.pdf"&gt; Manufacturer's datasheet&lt;/a&gt;</description>
+&lt;a href="https://ecsxtal.com/store/pdf/ecx-71.pdf"&gt; Manufacturer's datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="CRYSTAL-2SMD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ABS07-32.768KHZ-T">
+<device name="" package="ECS-.327-7-38-TR">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="2" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10899606/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12863883/4"/>
 </package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="CREATED_BY" value="PCBLayout.com" constant="no"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="535-9542-2-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Abracon LLC" constant="no"/>
-<attribute name="MPN" value="ABS07-32.768KHZ-T" constant="no"/>
-<attribute name="PACKAGE" value="SMD-2" constant="no"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="XC1657TR-ND" constant="no"/>
+<attribute name="MANUFACTURER" value="ECS Inc." constant="no"/>
+<attribute name="MPN" value="ECS-.327-7-38-TR" constant="no"/>
+<attribute name="PACKAGE" value="4-SMD" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2589,7 +2557,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <attribute name="CATEGORY" value="5v"/>
 </part>
 <part name="SUPPLY7" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
-<part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="-1206-16V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37426/1" value="4.7uF"/>
 <part name="SUPPLY8" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="C8" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" deviceset="CERAMIC 100NF-10V-10%-X5R(0402)" device="" package3d_urn="urn:adsk.eagle:package:8004285/1" value="100NF 10V"/>
 <part name="POT" library="Potentiometer_Trimmers" library_urn="urn:adsk.eagle:library:16179983" deviceset="91A1A-B28-B15L" device="" package3d_urn="urn:adsk.eagle:package:16153136/6"/>
@@ -2599,18 +2566,21 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="100PF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="100PF"/>
 <part name="SUPPLY12" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
-<part name="L1" library="Wurth_Automotive_WE-HCFA" library_urn="urn:adsk.eagle:library:14076708" deviceset="WE-HCFA_2818" device="" package3d_urn="urn:adsk.eagle:package:13133218/3" technology="_78436432100" value="10uH"/>
 <part name="L2" library="Wurth_Automotive_WE-MAIA" library_urn="urn:adsk.eagle:library:14076715" deviceset="WE-MAIA_3015" device="" package3d_urn="urn:adsk.eagle:package:13154123/2" technology="_78438335150" value="15uH"/>
 <part name="L4" library="Wurth_Signal &amp; Communications_WE-MK" library_urn="urn:adsk.eagle:library:14284513" deviceset="WE-MK_0201" device="" package3d_urn="urn:adsk.eagle:package:12864975/4" technology="_7447820039" value="3.9nH"/>
 <part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.8PF" device="-0402-50V-0.1PF" package3d_urn="urn:adsk.eagle:package:37413/1" value="0.8pF"/>
-<part name="X1" library="Crystals_Oscillators" library_urn="urn:adsk.eagle:library:24014151" deviceset="ABS07-32.768KHZ-T" device="" package3d_urn="urn:adsk.eagle:package:10899606/2"/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="12pF"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="12PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="12pF"/>
 <part name="SUPPLY13" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
+<part name="Y1" library="Crystals_Oscillators" library_urn="urn:adsk.eagle:library:24014151" deviceset="ECS-.327-7-38-TR" device="" package3d_urn="urn:adsk.eagle:package:12863883/4"/>
+<part name="L1" library="Wurth_Automotive_WE-MAIA" library_urn="urn:adsk.eagle:library:14076715" deviceset="WE-MAIA_2510" device="" package3d_urn="urn:adsk.eagle:package:13154127/2" technology="_78438323100" value="10uH"/>
+<part name="C11" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0402_TIGHT-6.3V-20%-X5R" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="99.06" y="124.46" size="1.778" layer="91">Circuit for the Nordic nRF52832 ble SOC for e-skate remote </text>
+<text x="147.32" y="121.92" size="1.778" layer="91">-Amin Mahjoub </text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="G$1" x="-15.24" y="17.78" smashed="yes">
@@ -2645,14 +2615,10 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <attribute name="VALUE" x="40.64" y="85.725" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="10.16" y="96.52" smashed="yes">
-<attribute name="VALUE" x="10.16" y="100.965" size="1.778" layer="96" align="center"/>
+<attribute name="VALUE" x="10.16" y="103.505" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="10.16" y="83.82" smashed="yes">
-<attribute name="VALUE" x="10.16" y="80.645" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="C4" gate="G$1" x="10.16" y="86.36" smashed="yes">
-<attribute name="NAME" x="11.684" y="89.281" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="11.684" y="84.201" size="1.778" layer="96" font="vector"/>
+<instance part="SUPPLY7" gate="G$1" x="10.16" y="71.12" smashed="yes">
+<attribute name="VALUE" x="10.16" y="67.945" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="-10.16" y="66.04" smashed="yes">
 <attribute name="VALUE" x="-10.16" y="62.865" size="1.778" layer="96" align="center"/>
@@ -2685,10 +2651,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <instance part="SUPPLY12" gate="G$1" x="162.56" y="48.26" smashed="yes">
 <attribute name="VALUE" x="162.56" y="45.085" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="L1" gate="G$1" x="30.48" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.67" y="86.36" size="1.27" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="33.02" y="82.55" size="1.27" layer="96" rot="R90"/>
-</instance>
 <instance part="L2" gate="G$1" x="30.48" y="104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.94" y="104.14" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="33.02" y="99.568" size="1.778" layer="96" rot="R90"/>
@@ -2701,10 +2663,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <attribute name="NAME" x="110.744" y="35.941" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="110.744" y="30.861" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="X1" gate="G$1" x="104.14" y="71.12" smashed="yes" rot="R270">
-<attribute name="NAME" x="106.426" y="74.422" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="99.568" y="74.676" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="C7" gate="G$1" x="119.38" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="116.459" y="77.724" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="121.539" y="77.724" size="1.778" layer="96" font="vector" rot="R90"/>
@@ -2715,6 +2673,18 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="144.78" y="66.04" smashed="yes">
 <attribute name="VALUE" x="144.78" y="62.865" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="Y1" gate="G$1" x="104.14" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="101.59575" y="66.0315" size="1.78098125" layer="95" rot="R90"/>
+<attribute name="VALUE" x="108.21446875" y="66.0269" size="1.78258125" layer="96" rot="R90"/>
+</instance>
+<instance part="L1" gate="G$1" x="30.48" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.94" y="86.36" size="1.778" layer="95" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="33.02" y="81.788" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C11" gate="G$1" x="10.16" y="83.82" smashed="yes">
+<attribute name="NAME" x="11.684" y="86.741" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="11.684" y="81.661" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -2742,16 +2712,13 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <junction x="88.9" y="81.28"/>
 </segment>
 <segment>
+<pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VDD"/>
-<wire x1="10.16" y1="96.52" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="91.44" x2="10.16" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
-<junction x="10.16" y="91.44"/>
+<wire x1="10.16" y1="88.9" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="U$1" pin="VDD@48"/>
-<wire x1="27.94" y1="91.44" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<junction x="10.16" y="91.44"/>
-<label x="20.32" y="91.44" size="1.778" layer="95"/>
+<wire x1="10.16" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="96.52" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<junction x="10.16" y="96.52"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2765,11 +2732,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="88.9" y1="73.66" x2="88.9" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="71.12" x2="88.9" y2="72.39" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY7" gate="G$1" pin="GND"/>
-<wire x1="10.16" y1="86.36" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="GND"/>
@@ -2813,6 +2775,20 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="127" y1="53.34" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="53.34" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="GND"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="73.66" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="93.98" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="U$1" pin="VSS@45"/>
+<wire x1="35.56" y1="93.98" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
+<junction x="40.64" y="93.98"/>
+<pinref part="SUPPLY5" gate="G$1" pin="GND"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="93.98" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DEC4" class="0">
 <segment>
@@ -2822,17 +2798,10 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="106.68" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="40.64" y1="93.98" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="U$1" pin="VSS@45"/>
-<wire x1="35.56" y1="93.98" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
-<junction x="40.64" y="93.98"/>
-<pinref part="SUPPLY5" gate="G$1" pin="GND"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="93.98" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="111.76" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="111.76" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<junction x="40.64" y="106.68"/>
 </segment>
 </net>
 <net name="DEC1" class="0">
@@ -2851,15 +2820,16 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="POTAI" class="0">
 <segment>
 <pinref part="POT" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="55.88" x2="-33.02" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="U$1" pin="P0.03/AIN1@05"/>
 <wire x1="-33.02" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
+<label x="0" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="ANT" class="0">
 <segment>
 <pinref part="U$1" gate="U$1" pin="ANT@30"/>
 <junction x="109.22" y="43.18"/>
@@ -2868,6 +2838,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="109.22" y1="43.18" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="L4" gate="G$1" pin="1"/>
+<label x="78.74" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RF" class="0">
@@ -2877,65 +2848,65 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="L4" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="DEC3" class="0">
 <segment>
 <pinref part="U$1" gate="U$1" pin="DEC3@33"/>
 <wire x1="73.66" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="50.8" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<label x="78.74" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="DEC2" class="0">
 <segment>
 <pinref part="U$1" gate="U$1" pin="DEC2@32"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<label x="78.74" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="DCC" class="0">
 <segment>
 <pinref part="U$1" gate="U$1" pin="DCC@47"/>
-<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="76.2" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<label x="30.48" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="XC2" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="93.98" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="111.76" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="73.66" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
-<junction x="104.14" y="76.2"/>
+<wire x1="114.3" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="U$1" pin="XC2@35"/>
+<wire x1="104.14" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="76.2" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="73.66" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<junction x="104.14" y="76.2"/>
+<label x="78.74" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="XC1" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="68.58" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="66.04" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
-<junction x="104.14" y="66.04"/>
 <pinref part="U$1" gate="U$1" pin="XC1@34"/>
 <wire x1="104.14" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="66.04" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+<junction x="104.14" y="66.04"/>
+<label x="78.74" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DCC1" class="0">
+<segment>
+<pinref part="L2" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="93.98" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<label x="30.48" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
